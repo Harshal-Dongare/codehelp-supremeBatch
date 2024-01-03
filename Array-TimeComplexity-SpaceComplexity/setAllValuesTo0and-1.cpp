@@ -9,7 +9,7 @@ int main(){
     // syntax: memset(arrName, -1 or 0, sizeof(arrName));
 
     int arrEle[] = {1, 2, 3, 4, 5, 6, 7, 8};
-    int size = sizeof(arrEle)/ sizeof(int);
+    int size = 8;
     memset(arrEle, -1, sizeof(arrEle));
 
     for(int index = 0; index < size ; index++){
