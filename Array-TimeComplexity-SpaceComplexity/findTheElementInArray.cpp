@@ -37,7 +37,10 @@ int main(){
 
     // for(int index =0; index < size; index++){
     //     // set flag to 1 if founds
-    //     if(arrEle[index] == key) flag = 1;
+    //     if(arrEle[index] == key) {
+    //         flag = 1;
+    //         break;
+    //         }
     // }
 
     // if(flag) cout << "found";
