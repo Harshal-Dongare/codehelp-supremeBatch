@@ -33,6 +33,5 @@ int main(){
 
     transposeOperation(arrEle, rows, cols, transposedMatrix);
     printTranspose(transposedMatrix, rows, cols);
-    
     return 0;
 }
