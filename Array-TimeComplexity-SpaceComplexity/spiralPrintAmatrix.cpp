@@ -1,4 +1,4 @@
-// GFG Problem statment: Spiral print a matrix
+// Leetcode Problem 54: Spiral print a matrix
 
 #include<iostream>
 #include<vector>
