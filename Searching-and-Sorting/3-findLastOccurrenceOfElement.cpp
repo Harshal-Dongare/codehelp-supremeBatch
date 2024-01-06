@@ -8,6 +8,7 @@ output: 6th index
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 int findLastOccurrence(vector<int> arr, int target){
@@ -35,6 +36,9 @@ int findLastOccurrence(vector<int> arr, int target){
 }
 
 int main(){
+    // Note: run each approach at a time. Do not run entire program at once
+
+    // Approach 1: user-defined method to find last occurrence of element
     vector<int> arrEle = {1, 3, 5, 7, 9, 9, 9, 12, 15};
     int target = 9;
 
@@ -42,5 +46,13 @@ int main(){
 
     cout << ans << " index" << endl;
 
+//---------------------------------------------------------------------------------------------
+
+    // Approach 2: pre-defined stl method to find last occurrence of element available in <algorithm>
+    vector<int> arrEle2 = {1, 3, 5, 7, 9, 9, 9, 12, 15};
+    int target = 7;
+
+    auto ans2 = std::upper_bound(arrEle2.begin(), arrEle2.end(), target);
+    cout << (ans2 - arrEle2.begin() - 1);
     return 0;
 }

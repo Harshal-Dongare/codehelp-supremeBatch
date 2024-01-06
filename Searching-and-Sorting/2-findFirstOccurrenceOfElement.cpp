@@ -28,7 +28,7 @@ int firstOccurrence(vector<int> arr, int target){
         else if(target < arr[mid]) end = mid - 1;
         else if(target > arr[mid]) start = mid + 1;
 
-        mid = start + (end -start)/2;
+        mid = start + (end - start)/2;
     }
     return ans;
 }
@@ -36,12 +36,12 @@ int firstOccurrence(vector<int> arr, int target){
 int main(){
     // Note: Run one approach at a time instead of running entire program at once
 
-    // Approach 1: user-defined find first occurence method
-    vector<int> arrEle= {1, 2, 3, 8, 8, 9, 12, 15};
-    int target = 8;
+    // // Approach 1: user-defined find first occurence method
+    // vector<int> arrEle= {1, 2, 3, 8, 8, 9, 12, 15};
+    // int target = 8;
 
-    int ans = firstOccurrence(arrEle, target);
-    cout << ans << " index" << endl;
+    // int ans = firstOccurrence(arrEle, target);
+    // cout << ans << " index" << endl;
 
 //-------------------------------------------------------------------------------------
 
