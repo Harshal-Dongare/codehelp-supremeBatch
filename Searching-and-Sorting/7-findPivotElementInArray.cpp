@@ -11,7 +11,7 @@ int findPivot(vector<int> arr){
     int end = arr.size() - 1;
     int mid = start + (end - start)/ 2;
 
-    while(start <= end){
+    while(start < end){
 
         if(mid+1 < arr.size() && arr[mid] > arr[mid+1]) return mid;
         if(mid-1 >= 0 && arr[mid-1] > arr[mid]) return mid-1;
@@ -23,7 +23,7 @@ int findPivot(vector<int> arr){
 
         mid = start + (end - start)/ 2;
     }
-
+    // if only one element present inside the array
     return start;
 }
 
