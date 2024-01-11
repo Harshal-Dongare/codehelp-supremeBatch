@@ -41,25 +41,30 @@ int findQuotient(int dividend, int divisor){
 };
 
 int main(){
-    int dividend = 22;
+    int dividend = -22;
     int divisor = 7;
 
     int ans = findQuotient(dividend, divisor);
 
     // for precision 
-    double finalAnwser = ans;
+    double finalAnwser = abs(ans);
+
     int precision;
     cout << "Enter the precision count: ";
     cin >> precision;
+
     double step = 0.1;
 
     for(int i = 0; i < precision; i++){
-        for(double j = ans; j*divisor <= dividend; j = j + step){
+        for(double j = finalAnwser; j*abs(divisor) <= abs(dividend); j = j + step){
             finalAnwser = j;
         }
         step = step/10;
     }
 
-    cout << "The answer is: " << finalAnwser << endl;
+    // check case for negative values
+    if(ans < 0) cout << "The answer is: " << -finalAnwser << endl;
+    else cout << "The answer is: " << finalAnwser << endl;
+
     return 0;
 }
