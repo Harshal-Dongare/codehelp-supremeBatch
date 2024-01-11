@@ -21,8 +21,8 @@ int binarySearch(vector<int> arr, int target){
     while(start <= end){
         // check if element is present at mid, mid+1 or mid-1 element
         if(target == arr[mid]) return mid;
-        if(mid-1 >= 0 && target == arr[mid-1]) return mid-1;
-        if(mid+1 < arr.size() && target == arr[mid+1]) return mid+1;
+        if(mid-1 >= start && target == arr[mid-1]) return mid-1;
+        if(mid+1 <= end && target == arr[mid+1]) return mid+1;
 
         // search left
         if(target < arr[mid]) end = mid -2;
