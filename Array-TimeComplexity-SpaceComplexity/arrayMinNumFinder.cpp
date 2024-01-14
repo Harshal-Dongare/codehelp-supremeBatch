@@ -1,5 +1,11 @@
 // Find the minimum number in an array. Contains all types of numbers.
 
+/*
+Test cases: 
+    [17, 62, 9, 63, 43]                            output: 9
+    [45, 0, -75, 23, 61, 49, 52, 12, 96, 42]       output: -75
+    [-45, 0, -175, -23, -61]                       output: -175
+*/
 #include<iostream>
 #include <limits.h>
 using namespace std;
