@@ -1,5 +1,7 @@
 // set all values inside an array to either 0 or -1 using memset() function
 
+// syntax: memset(baseAddress, replaceValue, sizeOfTheArray);
+
 #include <iostream>
 #include <cstring>
 using namespace std;
