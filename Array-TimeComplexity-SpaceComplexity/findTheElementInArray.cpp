@@ -1,4 +1,4 @@
-// find the element inside an array using Linear search approach and flag approach
+// check whether an element is present inside an array or not using Linear search approach and flag approach
 
 #include <iostream>
 using namespace std;
