@@ -10,6 +10,10 @@ int main(){
     int start = 0, end = size - 1;
 
     while(start <= end){
+        
+        // this condition avoids infinite loop when size of the array is odd
+        if(start == end) start++;
+        
         if(start < end){
             swap(arrEle[start], arrEle[end]);
             start++;

@@ -1,4 +1,14 @@
-// Find Maximum number in an array. Assum array contains values >= 0
+// Find Maximum number in an array. 
+
+/*
+
+Test cases: 
+    [-7, -1, -2, -3, -4, -5, -6]               output: -1
+    [7, 23, 70, 0, 56, 12, 3, 76]              output: 76
+    [7, -23, 910, 0, -586, 12, 3, -76]         output: 910
+    [5]                                        output: 5
+    
+*/
 
 #include<iostream>
 // Header file for INT_MIN function

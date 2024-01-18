@@ -1,5 +1,9 @@
-// find unique element inside a vector. 
-// Conditions: only 1 unique element and pairs of repeated elements
+// find unique element inside a vector. vector should be sorted and there will be a pair of element except one element
+
+/*
+    Test cases:
+    [1, 1, 2, 2, 3, 3, 4, 6, 6, 7, 7, 8, 8]        output: 4
+*/
 
 #include<iostream>
 #include<vector>
