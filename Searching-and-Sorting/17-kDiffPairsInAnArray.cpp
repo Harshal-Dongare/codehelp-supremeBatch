@@ -73,21 +73,21 @@ int main(){
     // Approach 2: Two pointers approach
     // Time Complexity: O(n)
 
-    vector<int> arr= {3,1,4,1,5};
+    vector<int> arr2= {3,1,4,1,5};
     int k = 2;
 
     // sort the array
-    sort(arr.begin(), arr.end());
+    sort(arr2.begin(), arr2.end());
 
     // use set STL to store unique pairs as per the condition
     set<pair<int, int>> ans;
 
     int i = 0, j = 1;
-    while(j <= arr.size()){
-        int diff = arr[j] - arr[i];
+    while(j <= arr2.size()){
+        int diff = arr2[j] - arr2[i];
 
         if(diff == k) {
-            ans.insert({arr[i], arr[j]});
+            ans.insert({arr2[i], arr2[j]});
             i++, j++;
         }
         else if(diff > k) i++;
