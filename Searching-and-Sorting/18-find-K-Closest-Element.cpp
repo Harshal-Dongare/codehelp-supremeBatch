@@ -141,7 +141,7 @@ int main(){
 
 
     // Approach 2: Two pointers approach + BS
-    // vector<int> arr2 = {12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56};     --> test case 1
+    // vector<int> arr2 = {12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56};     //--> test case 1
     vector<int> arr2 = {1, 2, 3, 4 , 5};
 
     // k is the total number of closest elements to find
