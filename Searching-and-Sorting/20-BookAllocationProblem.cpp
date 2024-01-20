@@ -79,6 +79,13 @@ int main(){
     int ans = -1;
 
     while(start <= end){
+
+        // if Number of students is greater than number of books
+        if(students > booksCount){
+            cout << ans;
+            break;
+        }
+
         // if current mid value is valid store it
         if(isPossible(arr, students, booksCount, mid)){
             ans = mid;
